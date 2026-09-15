@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Software Engineering portfolio of Achira Kuruppuachchige, a Computer Science undergraduate focused on backend APIs, web, mobile, and practical software development.">
+    <meta name="theme-color" content="#07111f">
+    <title>Achira Kuruppuachchige | Software Engineering Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="ambient ambient-one"></div>
+<div class="ambient ambient-two"></div>
+<div class="grid-overlay"></div>
+
+<header class="site-header" id="top">
+  <nav class="nav shell">
+    <a href="#top" class="brand" aria-label="Achira home">
+      <span class="brand-mark">AK</span>
+      <span>Achira<span class="accent">.</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact" class="nav-pill">Contact</a>
+    </div>
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO SECTION -->
+  <section class="hero shell section">
+    <div class="hero-copy reveal">
+      <div class="availability"><span class="pulse"></span> Open to Software Engineering opportunities</div>
+      <div class="typewriter-wrapper">
+        <span class="typewriter-prefix">I am a </span>
+        <span class="typewriter-text" id="typewriter">Software Engineer</span>
+      </div>
+      <h1>Building practical software from <span class="gradient-text">APIs to interfaces.</span></h1>
+      <p class="hero-lead">Computer Science undergraduate specializing in backend systems, APIs, and modern frontend development. Based in Colombo, Sri Lanka.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#projects">View projects →</a>
+        <a class="button ghost" href="assets/Achira%20Iduwara%20Resume.pdf" download>Download CV ↓</a>
+      </div>
+      <div class="social-row">
+        <a href="https://github.com/achira20240081"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/achira-kuruppu-achchige-a8b1b0436"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="mailto:achiraiduwara@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="profile-photo-container">
+        <img src="assets/Achira%20Iduwara.jpeg" alt="Achira Kuruppuachchige" />
+      </div>
+      <div class="floating-icons">
+        <!-- 6-8 floating tech icon badges positioned around the photo -->
+        <div class="floating-icon" style="--delay: 0s; --x: -60px; --y: -40px;"><i class="fab fa-java"></i></div>
+        <div class="floating-icon" style="--delay: 0.5s; --x: 70px; --y: -30px;"><i class="fab fa-python"></i></div>
+        <div class="floating-icon" style="--delay: 1s; --x: 90px; --y: 50px;"><i class="fab fa-js"></i></div>
+        <div class="floating-icon" style="--delay: 1.5s; --x: -80px; --y: 60px;"><i class="fab fa-react"></i></div>
+        <div class="floating-icon" style="--delay: 2s; --x: 50px; --y: 100px;"><i class="fab fa-git-alt"></i></div>
+        <div class="floating-icon" style="--delay: 2.5s; --x: -50px; --y: 110px;"><i class="fas fa-database"></i></div>
+      </div>
+      <div class="particles-container" id="particles"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="section section-panel" id="about">
+    <div class="shell">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Get to know me</span>
+        <h2>About Me</h2>
+        <div class="section-underline"></div>
+        <p>My strongest interests are software development, web technologies, mobile applications, APIs, and database-backed systems.</p>
+      </div>
+      <div class="about-cards">
+        <!-- 4 cards: Programming, Backend & APIs, Web & Mobile, Tooling & Quality -->
+        <!-- Each card has: .card-accent-bar, .card-icon (with Font Awesome icon), h3, p -->
+        <article class="about-card reveal delay-1">
+          <div class="card-accent-bar" style="background: var(--accent, #3b82f6)"></div>
+          <div class="card-icon"><i class="fas fa-code"></i></div>
+          <h3>Programming</h3>
+          <p>Core languages and web fundamentals used across academic and personal projects.</p>
+        </article>
+        <article class="about-card reveal delay-2">
+          <div class="card-accent-bar" style="background: var(--accent-2, #8b5cf6)"></div>
+          <div class="card-icon"><i class="fas fa-server"></i></div>
+          <h3>Backend & APIs</h3>
+          <p>RESTful service design, JSON handling, API structure, persistence concepts, and backend tooling.</p>
+        </article>
+        <article class="about-card reveal delay-3">
+          <div class="card-accent-bar" style="background: var(--accent-3, #10b981)"></div>
+          <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3>Web & Mobile</h3>
+          <p>Responsive interface development with an active focus on modern frontend and mobile frameworks.</p>
+        </article>
+        <article class="about-card reveal delay-4">
+          <div class="card-accent-bar" style="background: var(--accent, #3b82f6)"></div>
+          <div class="card-icon"><i class="fas fa-tools"></i></div>
+          <h3>Tooling & Quality</h3>
+          <p>Developer workflow and testing tools used to validate behaviour and improve reliability.</p>
+        </article>
+      </div>
+      <div class="about-meta reveal">
+        <div><span>Based in</span><strong>Colombo, Sri Lanka</strong></div>
+        <div><span>Study</span><strong>BSc (Hons) Computer Science</strong></div>
+        <div><span>Institute</span><strong>Informatics Institute of Technology</strong></div>
+        <div><span>Direction</span><strong>Software Engineering</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="section shell" id="skills">
+    <div class="section-header reveal">
+      <span class="section-subtitle">Technical toolkit</span>
+      <h2>Skills & Technologies</h2>
+      <div class="section-underline"></div>
+      <p>A software engineering toolkit shaped by coursework, personal projects, API work, and QA training.</p>
+    </div>
+    <div class="filter-tabs reveal">
+      <button class="filter-tab active" data-filter="all">All</button>
+      <button class="filter-tab" data-filter="programming">Programming</button>
+      <button class="filter-tab" data-filter="backend">Backend & APIs</button>
+      <button class="filter-tab" data-filter="webmobile">Web & Mobile</button>
+      <button class="filter-tab" data-filter="tooling">Tooling & Quality</button>
+    </div>
+    <div class="skills-grid">
+      <!-- 4 skill category cards, each with data-category attribute -->
+      <article class="skill-card reveal delay-1" data-category="programming">
+        <div class="skill-icon"><i class="fas fa-code"></i></div>
+        <h3>Programming</h3>
+        <p>Core languages and web fundamentals.</p>
+        <div class="skill-items">
+          <span class="skill-item"><i class="fab fa-java"></i> Java</span>
+          <span class="skill-item"><i class="fab fa-python"></i> Python</span>
+          <span class="skill-item"><i class="fab fa-js"></i> JavaScript</span>
+          <span class="skill-item"><i class="fas fa-database"></i> SQL</span>
+          <span class="skill-item"><i class="fab fa-html5"></i> HTML</span>
+          <span class="skill-item"><i class="fab fa-css3-alt"></i> CSS</span>
+        </div>
+      </article>
+      <article class="skill-card reveal delay-2" data-category="backend">
+        <div class="skill-icon"><i class="fas fa-server"></i></div>
+        <h3>Backend & APIs</h3>
+        <p>API design and backend development.</p>
+        <div class="skill-items">
+          <span class="skill-item"><i class="fas fa-plug"></i> REST APIs</span>
+          <span class="skill-item"><i class="fab fa-java"></i> JAX-RS</span>
+          <span class="skill-item"><i class="fab fa-java"></i> Jersey</span>
+          <span class="skill-item"><i class="fas fa-server"></i> Grizzly</span>
+          <span class="skill-item"><i class="fas fa-cogs"></i> Jackson</span>
+          <span class="skill-item"><i class="fas fa-cube"></i> Maven</span>
+          <span class="skill-item"><i class="fas fa-database"></i> MySQL</span>
+        </div>
+      </article>
+      <article class="skill-card reveal delay-3" data-category="webmobile">
+        <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
+        <h3>Web & Mobile</h3>
+        <p>Modern frontend and mobile frameworks.</p>
+        <div class="skill-items">
+          <span class="skill-item"><i class="fas fa-mobile-alt"></i> Responsive UI</span>
+          <span class="skill-item"><i class="fab fa-figma"></i> Figma</span>
+          <span class="skill-item"><i class="fab fa-react"></i> React · learning</span>
+          <span class="skill-item"><i class="fab fa-react"></i> React Native · learning</span>
+        </div>
+      </article>
+      <article class="skill-card reveal delay-4" data-category="tooling">
+        <div class="skill-icon"><i class="fas fa-tools"></i></div>
+        <h3>Tooling & Quality</h3>
+        <p>Workflow and testing tools.</p>
+        <div class="skill-items">
+          <span class="skill-item"><i class="fab fa-git-alt"></i> Git</span>
+          <span class="skill-item"><i class="fab fa-github"></i> GitHub</span>
+          <span class="skill-item"><i class="fas fa-vial"></i> JUnit 5</span>
+          <span class="skill-item"><i class="fas fa-paper-plane"></i> Postman</span>
+          <span class="skill-item"><i class="fas fa-code"></i> IntelliJ IDEA</span>
+          <span class="skill-item"><i class="fas fa-code"></i> VS Code</span>
+          <span class="skill-item"><i class="fas fa-tasks"></i> JIRA</span>
+          <span class="skill-item"><i class="fas fa-robot"></i> Selenium</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section class="section section-panel" id="projects">
+    <div class="shell">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Selected projects</span>
+        <h2>Work That Shows How I Build</h2>
+        <div class="section-underline"></div>
+        <p>Selected software projects combining development, API design, databases, web interfaces, and testing.</p>
+      </div>
+      <div class="filter-tabs reveal">
+        <button class="filter-tab active" data-filter="all">All</button>
+        <button class="filter-tab" data-filter="backend">Backend</button>
+        <button class="filter-tab" data-filter="fullstack">Full-stack</button>
+        <button class="filter-tab" data-filter="web">Web</button>
+      </div>
+      <div class="projects-grid">
+        <!-- Project cards with gradient placeholders since no screenshots -->
+        <!-- Each has data-category for filtering -->
+        
+        <article class="project-card reveal delay-1" data-category="backend">
+          <div class="project-image">
+            <div class="project-placeholder" style="background: linear-gradient(135deg, rgba(94,234,212,.15), rgba(96,165,250,.15));"><span>SC</span></div>
+            <div class="project-overlay">
+              <a href="https://github.com/achira20240081/smart-campus-api" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <span class="featured-badge">Featured</span>
+          <div class="project-body">
+            <p class="project-type">Backend / REST API</p>
+            <h3>Smart Campus Sensor API</h3>
+            <p>A RESTful Java API for managing university rooms, IoT sensors, and time-series sensor readings with structured API errors, HATEOAS navigation, and unit tests.</p>
+            <div class="tags"><span>Java 17</span><span>JAX-RS</span><span>Jersey 3</span><span>Grizzly</span><span>Jackson</span><span>Maven</span><span>JUnit 5</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal delay-2" data-category="fullstack">
+          <div class="project-image">
+            <div class="project-placeholder" style="background: linear-gradient(135deg, rgba(96,165,250,.15), rgba(129,140,248,.15));"><span>ER</span></div>
+            <div class="project-overlay">
+              <a href="https://github.com/achira20240081" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <p class="project-type">Software Engineering Project</p>
+            <h3>ERAS</h3>
+            <p>An additional project in my software engineering portfolio, representing continued hands-on development, problem solving, and project-based learning.</p>
+            <div class="tags"><span>Software Engineering</span><span>Project Development</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal delay-3" data-category="fullstack">
+          <div class="project-image">
+            <div class="project-placeholder" style="background: linear-gradient(135deg, rgba(129,140,248,.15), rgba(94,234,212,.15));"><span>HC</span></div>
+          </div>
+          <div class="project-body">
+            <p class="project-type">Full-stack Academic Project</p>
+            <h3>Healthcare Appointment Management</h3>
+            <p>Web-based system for patients, doctors, and administrators covering registration, booking, cancellation, scheduling, authentication, and error handling.</p>
+            <div class="tags"><span>Java</span><span>MySQL</span><span>HTML</span><span>CSS</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal delay-1" data-category="fullstack">
+          <div class="project-image">
+            <div class="project-placeholder" style="background: linear-gradient(135deg, rgba(94,234,212,.15), rgba(129,140,248,.15));"><span>BK</span></div>
+          </div>
+          <div class="project-body">
+            <p class="project-type">Application Development</p>
+            <h3>Bank Management System</h3>
+            <p>Developed account and transaction functionality, validated database integrity with SQL, and strengthened reliability through 20+ structured test cases.</p>
+            <div class="tags"><span>Java</span><span>MySQL</span><span>HTML</span><span>CSS</span><span>Testing</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal delay-2" data-category="web">
+          <div class="project-image">
+            <div class="project-placeholder" style="background: linear-gradient(135deg, rgba(96,165,250,.15), rgba(94,234,212,.15));"><span>EP</span></div>
+          </div>
+          <div class="project-body">
+            <p class="project-type">Responsive Web Project</p>
+            <h3>Earth Pulse</h3>
+            <p>A climate-awareness website with multi-page navigation, forms, responsive layouts, and data-backed functionality, supported by exploratory and functional testing.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>MySQL</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNEY SECTION -->
+  <section class="section shell" id="journey">
+    <div class="section-header reveal">
+      <span class="section-subtitle">My Journey</span>
+      <h2>Learning by Building</h2>
+      <div class="section-underline"></div>
+      <p>Combining a Computer Science degree with focused software projects and additional testing/automation training.</p>
+    </div>
+    <div class="timeline">
+      <!-- 3 timeline items with same content as before -->
+      <article class="timeline-item reveal delay-1">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2024 — 2028</div>
+        <div class="timeline-content">
+          <span>Education</span>
+          <h3>BSc (Hons) Computer Science</h3>
+          <p>Informatics Institute of Technology, affiliated with the University of Westminster.</p>
+        </div>
+      </article>
+      <article class="timeline-item reveal delay-2">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Jun — Aug 2026</div>
+        <div class="timeline-content">
+          <span>Certification</span>
+          <h3>Software Quality Assurance Using Test Automation Framework</h3>
+          <p>University of Colombo School of Computing.</p>
+        </div>
+      </article>
+      <article class="timeline-item reveal delay-3">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Current</div>
+        <div class="timeline-content">
+          <span>Development</span>
+          <h3>Modern web, mobile & API skills</h3>
+          <p>Improving React, React Native, Java, Python, JavaScript, Postman, Selenium WebDriver, and JIRA workflows through hands-on practice.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section section-panel" id="contact">
+    <div class="shell">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Get in touch</span>
+        <h2>Let's Work Together</h2>
+        <div class="section-underline"></div>
+        <p>I'm open to internships, junior software engineering opportunities, collaborations, and practical projects.</p>
+      </div>
+      <div class="contact-grid">
+        <form class="contact-form reveal delay-1" action="mailto:achiraiduwara@gmail.com" method="post" enctype="text/plain">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="button primary form-submit">Send Message <span>→</span></button>
+        </form>
+        <div class="contact-info reveal delay-2">
+          <div class="contact-method">
+            <div class="contact-method-icon"><i class="fas fa-envelope"></i></div>
+            <div><strong>Email Me</strong><p>achiraiduwara@gmail.com</p></div>
+          </div>
+          <div class="contact-method">
+            <div class="contact-method-icon"><i class="fas fa-phone"></i></div>
+            <div><strong>Call Me</strong><p>+94 74 336 1619</p></div>
+          </div>
+          <div class="contact-method">
+            <div class="contact-method-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div><strong>Location</strong><p>Colombo, Sri Lanka</p></div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://github.com/achira20240081" target="_blank" rel="noreferrer" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/achira-kuruppu-achchige-a8b1b0436" target="_blank" rel="noreferrer" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:achiraiduwara@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer shell">
+  <p>© <span id="year"></span> Achira Kuruppuachchige</p>
+  <div class="footer-socials">
+    <a href="https://github.com/achira20240081" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/achira-kuruppu-achchige-a8b1b0436" target="_blank" rel="noreferrer"><i class="fab fa-linkedin"></i></a>
+    <a href="mailto:achiraiduwara@gmail.com"><i class="fas fa-envelope"></i></a>
+  </div>
+  <a href="#top">Back to top ↑</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
